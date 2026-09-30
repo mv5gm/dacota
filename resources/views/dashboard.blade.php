@@ -102,6 +102,12 @@
                             <a href="{{ route('admin.users.index') }}" class="btn btn-outline-primary">
                                 <i class="ti ti-users me-1"></i> Gestionar usuarios
                             </a>
+                            <a href="{{ route('admin.condominios.index') }}" class="btn btn-outline-primary">
+                                <i class="ti ti-building-community me-1"></i> Gestionar condominios
+                            </a>
+                            <a href="{{ route('admin.tipo-condominios.index') }}" class="btn btn-outline-primary">
+                                <i class="ti ti-tag me-1"></i> Tipos de condominio
+                            </a>
                         @endrole
 
                         @role('admin')

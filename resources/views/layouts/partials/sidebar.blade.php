@@ -54,6 +54,24 @@
                             <span class="hide-menu">Usuarios</span>
                         </a>
                     </li>
+
+                    <li class="sidebar-item">
+                        <a class="sidebar-link {{ request()->routeIs('admin.condominios.*') ? 'active' : '' }}" href="{{ route('admin.condominios.index') }}" aria-expanded="false">
+                            <span class="d-flex">
+                                <i class="ti ti-building-community"></i>
+                            </span>
+                            <span class="hide-menu">Condominios</span>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-item">
+                        <a class="sidebar-link {{ request()->routeIs('admin.tipo-condominios.*') ? 'active' : '' }}" href="{{ route('admin.tipo-condominios.index') }}" aria-expanded="false">
+                            <span class="d-flex">
+                                <i class="ti ti-tag"></i>
+                            </span>
+                            <span class="hide-menu">Tipos de condominio</span>
+                        </a>
+                    </li>
                 @endrole
 
                 @role('admin')
